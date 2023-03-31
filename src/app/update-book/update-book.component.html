@@ -1,6 +1,6 @@
 <div class="col-md-6 offset-md-3">
   <h3> Update Book </h3>
-  <form (ngSubmit)="onSubmit()">
+  <form>
     <div class="form-group" >
       <label>Name</label>
       <input type="text" class="form-control" id="name"
@@ -30,6 +30,6 @@
       <input type="text" class="form-control" id="description"
              [(ngModel)]="books.description" name="description"/>
     </div>
-    <button class="btn mt-3 fw-bold" type="submit" style="color: white; background-color: #FFB3B3;">Update</button>
+    <button class="btn mt-3 fw-bold" (click)="updateBook()" type="button" style="color: white; background-color: #FFB3B3;">Update</button>
   </form>
   </div>

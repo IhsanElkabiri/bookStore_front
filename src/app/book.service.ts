@@ -19,7 +19,7 @@ export class BookService {
   getBookById(id:number):Observable<Book>{
     return this.httpClient.get<Book>( `${this.baseURL}/${id}`);
   }
-  updateBook(id:number, book:Book) : Observable<Object>{
+  updateBook(id:number, book:Book) : Observable<any>{
     return this.httpClient.put(`${this.baseURL}/${id}`, book);
   }
   deleteBook(id:number): Observable<Object>{

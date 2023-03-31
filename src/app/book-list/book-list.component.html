@@ -1,0 +1,28 @@
+<h3 class="text-center mt-5 mb-4" style="color: #E8D1D1;"> Book List</h3>
+<table class="table table-striped fw-bold ">
+  <thead>
+    <tr style="color: gray; background-color: #ffe6e6d3;">
+      <th>Name</th>
+      <th>Auteur</th>
+      <th>Category</th>
+      <th>Isbn</th>
+      <th>Description</th>
+      <th>Actions</th>
+
+    </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor="let book of books" >
+      <td style="color: #0000ffb6">{{book.name}}</td>
+      <td style="color: #0000ffb6">{{book.auteur}}</td>
+      <td style="color: #0000ffb6">{{book.category}}</td>
+      <td style="color: #0000ffb6">{{book.isbn}}</td>
+      <td style="color: #0000ffb6">{{book.description}}</td>
+      <td>
+        <button (click)="goToUpdateBook(book.id)" class="btn fw-bold" style="color: white; background-color: #DA9599;">Update</button>
+        <button (click)="deleteBook(book.id)" class="btn fw-bold " style="margin-left: 10px; color: white; background-color: #d84c53;">Delete</button>
+    </td>
+
+    </tr>
+  </tbody>
+</table>

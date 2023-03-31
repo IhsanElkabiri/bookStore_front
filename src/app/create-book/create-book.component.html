@@ -1,0 +1,36 @@
+<div class="col-md-6 offset-md-3 mt-4 mb-4">
+  <h3 class="text-center mb-4 mt-3" style="color: #E8D1D1;"> Create Book </h3>
+  <form (ngSubmit)="onSubmit()" class="fw-bold" style="color :gray;">
+    <div class="form-group" >
+      <label>Name</label>
+      <input type="text" class="form-control" id="name"
+             [(ngModel)]="books.name" name="name"/>
+    </div>
+
+    <div class="form-group">
+      <label>Auteur</label>
+      <input type="text" class="form-control" id="auteur"
+             [(ngModel)]="books.auteur" name="auteur"/>
+    </div>
+
+    <div class="form-group">
+      <label>Category</label>
+      <input type="text" class="form-control" id="category"
+             [(ngModel)]="books.category" name="category"/>
+    </div>
+
+    <div class="form-group">
+      <label>Isbn</label>
+      <input type="text" class="form-control" id="isbn"
+             [(ngModel)]="books.isbn" name="isbn"/>
+    </div>
+
+    <div class="form-group">
+      <label>Description</label>
+      <input type="text" class="form-control" id="description"
+             [(ngModel)]="books.description" name="description"/>
+    </div>
+
+    <button class="btn mt-3 fw-bold" type="submit" style="color: white; background-color: #FFB3B3;">Add</button>
+  </form>
+  </div>
